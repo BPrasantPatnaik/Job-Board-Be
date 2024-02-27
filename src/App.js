@@ -15,7 +15,9 @@ const MemoryStore = memorystore(session);
 
 app.use(cors(
     {
-        origin:process.env.Cors_origin
+        origin:process.env.Cors_origin,
+        methods:["POST","GET"],
+        credentials:true
     }
 ))
 
