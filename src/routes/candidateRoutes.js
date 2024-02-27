@@ -145,6 +145,7 @@ router.route("/Dashboard").get((req,res)=>{
 router.post("/Dashboard/Profile", upload.single('File'), async (req, res) => {
     console.log(".....................I am at candidate Profile backend of candidate.................");
     console.log("File path We got it from multer = ",req.file)
+    console.log("req.body =",req.body)
     let resumePath="";
     try {
         const { user, description, gender, phone, linkedin, twitter, facebook, instagram, address,dateOfBirth } = await req.body;
