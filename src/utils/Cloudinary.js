@@ -8,7 +8,7 @@ cloudinary.config({
   api_secret: process.env.Cloudinary_api_secret_key 
 });
 
-const UploadOnCloudinary = async(localFilePath)=>{
+const UploadOnCloudinary = async (localFilePath)=>{
     console.log("............We are in cloudinary..................")
 
     try {

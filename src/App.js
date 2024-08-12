@@ -24,8 +24,8 @@ app.use(cors(
 //allowing cors to flow into and out of backend
 
 app.use(express.json())             //allowing json data to flow into and out of backend
-app.use(bodyParser.urlencoded({extended:true})) //allowing to extract data from the frontend
-app.use(express.urlencoded({extended:true}))    //allowing url data to flow into and out of backend
+app.use(bodyParser.urlencoded({extended:true,limit:"1024kb"})) //allowing to extract data from the frontend
+app.use(express.urlencoded({extended:true,limit:"1024kb"}))    //allowing url data to flow into and out of backend
 app.use(express.static("public")) //allowing static data from public folder to flow into and out of backend
 app.use(cookieParser());//allowing cookies to flow in backend and front-end
 app.use(session({
