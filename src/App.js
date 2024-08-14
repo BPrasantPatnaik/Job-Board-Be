@@ -16,7 +16,6 @@ const MemoryStore = memorystore(session);
 app.use(cors(
     {
         origin:process.env.Cors_origin,
-        methods:["POST","GET"],
         credentials:true
     }
 ))
@@ -132,7 +131,6 @@ app.post('/api/getJobData',async (req,res)=>{
         }
 
     try {
-        
         const result=await Job.find({_id : jobID})
         //console.log(result)
         return res.json({
