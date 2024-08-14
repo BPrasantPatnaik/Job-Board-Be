@@ -138,10 +138,6 @@ router.route("/Signup").post(async (req,res)=>{
     
 })
 
-router.route("/Dashboard").get((req,res)=>{
-    res.send("I am at employer Dashboard")
-})
-
 router.route("/Dashboard/Profile").post(async (req, res) => {
     console.log("I am at employer Profile backend of employer");
 

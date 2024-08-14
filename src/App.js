@@ -238,7 +238,11 @@ app.post('/api/testemail',async (req,res)=>{
                 from:'jobboardonly4uh@gmail.com',
                 to:email,
                 subject:"Account Created in Job Board",
-                html:`<h2>Thank You for beliving in us </h2> <h3>Congratulations </h3><p>Welcome to our community! We're thrilled to have you join us. Your account is now ready for exploration. Feel free to dive in and discover all that awaits. Should you need any assistance, don't hesitate to reach out. Here's to an exciting journey ahead with us! </p>`
+                html:`<h2>Thank You for beliving in us </h2>
+                 <h3>Congratulations </h3>
+                <p>Welcome to our community! We're thrilled to have you join us. Your account is now ready for exploration.
+                 Feel free to dive in and discover all that awaits. Should you need any assistance, don't hesitate to reach out. 
+                 Here's to an exciting journey ahead with us! </p>`
             })
 
             console.log("Info = ",info)

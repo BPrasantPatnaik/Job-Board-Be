@@ -139,9 +139,6 @@ router.route("/Signup").post(async (req,res)=>{
           });
     }
 })
-router.route("/Dashboard").get((req,res)=>{
-    res.send("I am at candidate Dashboard")
-})
 router.route("/Dashboard/Profile").post(upload.single('File') ,  async (req, res) => {
     console.log(".....................I am at candidate Profile backend of candidate.................");
     console.log("File path We got it from multer = ",req.file)
