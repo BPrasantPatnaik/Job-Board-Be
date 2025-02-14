@@ -37,7 +37,7 @@ app.use(session({
     },
     store: new MemoryStore({
         checkPeriod: 6 * 24 * 60 * 60 * 1000 // prune expired entries every 24h
-      })
+    })
 }))
 app.use(express.static(process.cwd()+'/dist'))
 
